@@ -10,32 +10,39 @@
   <main class="container">
     <header>
       <h1>Loja</h1>
+      <button id="btn-toggle-carrinho" aria-label="Abrir Carrinho" title="Abrir Carrinho" type="button">🛒</button>
     </header>
     <section class="catalogo">
       <div class="produtos">
         <div class="cartao">
-          <img src="prod1.jpg" alt="Placa-mãe" />
+          <img src="assets/placaMae.jpg" alt="Placa-mãe" />
           <p class="preco">R$389,00</p>
           <button>Comprar</button>
         </div>
         <div class="cartao">
-          <img src="prod2.jpg" alt="Processador" />
+          <img src="assets/processador.jpg" alt="Processador" />
           <p class="preco">R$700,00</p>
           <button>Comprar</button>
         </div>
         <div class="cartao">
-          <img src="prod3.jpg" alt="Outro Produto" />
+          <img src="assets/memoriaRam.jpg" alt="Memória RAM" />
           <p class="preco">R$3900,00</p>
           <button>Comprar</button>
         </div>
         <div class="cartao">
-          <img src="prod4.jpg" alt="Produto Extra" />
+          <img src="assets/fonte.jpg" alt="Fonte" />
           <p class="preco">R$5000,00</p>
           <button>Comprar</button>
         </div>
       </div>
-      <aside class="carrinho">
-        <h2>Produtos e Serviços</h2>
+
+      <!-- Carrinho container como sidebar, oculto inicialmente -->
+      <aside class="carrinho-container">
+        <div class="carrinho">
+          <button id="btn-fechar-carrinho" aria-label="Fechar Carrinho" title="Fechar Carrinho" type="button">×</button>
+          <h2>Produtos e Serviços</h2>
+          <!-- Conteúdo do carrinho será inserido pelo JS -->
+        </div>
       </aside>
     </section>
   </main>
